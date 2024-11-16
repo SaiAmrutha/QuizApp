@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Start quiz button -->
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+    <!-- info box -->
+    <div class="info_box">
+      <div class="info_title">
+        <span>Instructions</span>
+      </div>
+      <div class="info_list">
+        <div class="info">
+          1. You will get only <span>15 seconds</span> for each question.
+        </div>
+        <div class="info">2. You can't reselect after selecting an option.</div>
+        <div class="info">
+          3. Option can't be selected once the timer goes off.
+        </div>
+        <div class="info">
+          4. Once you begin the quiz, you need to play it till the end.
+        </div>
+        <div class="info">
+          5. Points will be awarded based on the number of correct answers.
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="quit">Exit Quiz</button>
+        <button class="restart">Continue</button>
+      </div>
+    </div>
+
+    <!-- quiz box -->
+    <div class="quiz_box">
+      <header>
+        <div class="title">Simple Quiz Application</div>
+        <div class="timer">
+          <div class="time_text">Time left</div>
+          <div class="timer_sec">15</div>
+        </div>
+      </header>
+      <section>
+        <div class="que_text">
+          <span>hello</span>
+        </div>
+        <div class="option_list">
+          <div class="option">
+            <span>Correct answer</span>
+            <div class="icon tick">
+              <i class="fa-solid fa-circle-check"></i>
+              <!-- style="color: #63e6be" -->
+            </div>
+          </div>
+          <div class="option">
+            <span>Incorrect answer</span>
+            <div class="icon cross">
+              <i class="fa-regular fa-circle-xmark"></i>
+              <!-- style="color: #e70808" -->
+            </div>
+          </div>
+          <div class="option"><span>hello</span></div>
+          <div class="option"><span>hello</span></div>
+        </div>
+      </section>
+      <!-- quiz box footer -->
+      <footer>
+        <div class="total_que">
+          <span
+            ><p>2</p>
+            of
+            <p>5</p>
+            Questions</span
+          >
+        </div>
+        <button class="next_btn disabled">Next Question</button>
+      </footer>
+    </div>
+
+    <!-- result box -->
+    <div class="result_box">
+      <div class="icon">
+        <i class="fas fa-crown"></i>
+      </div>
+      <div class="complete_text">You've completed the Quiz!!</div>
+      <div class="score_text">Your score is: <span class="score"></span></div>
+      <div class="buttons">
+        <button class="restart">Replay Quiz</button>
+        <button class="quit">Quit Quiz</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
